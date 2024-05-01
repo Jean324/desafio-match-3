@@ -181,7 +181,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 96077960894129826, guid: 61eea4b7e5d6e804a9862320bd9f87a6, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3409431754245921226, guid: 61eea4b7e5d6e804a9862320bd9f87a6, type: 3}
       propertyPath: m_Name
@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4834866815074986464, guid: 61eea4b7e5d6e804a9862320bd9f87a6, type: 3}
       propertyPath: playOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6873259174721749212, guid: 61eea4b7e5d6e804a9862320bd9f87a6, type: 3}
       propertyPath: m_SortingLayer
