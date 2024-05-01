@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a108aff3c0ead4c4d82e668e6b80b964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: ec8ef49ce0c4c964dbe039a88276780f, type: 2}
+  material: {fileID: 2100000, guid: 4e18ca8454692914886fbb1fa4f3a791, type: 2}
   color: {r: 1, g: 1, b: 1, a: 1}
   animator: {fileID: 1340614748}
   buttonPlay: {fileID: 1236503792}
@@ -524,7 +524,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 123514638242802851, guid: b3344e1293081664b83bd45e592d6dc5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 123514638242802851, guid: b3344e1293081664b83bd45e592d6dc5, type: 3}
       propertyPath: m_StaticEditorFlags
