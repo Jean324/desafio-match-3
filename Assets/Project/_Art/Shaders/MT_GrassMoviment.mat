@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MT_PlantsMovimente
+  m_Name: MT_GrassMoviment
   m_Shader: {fileID: -6465566751694194690, guid: ec8d74b57f0c2084d8120bf6bfa9cab7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask:
-        m_Texture: {fileID: 2800000, guid: 555af37cf7d56d148871ca63efffec69, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0cf7d01dac9378c47acb743ebb4a8a43, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
@@ -47,9 +47,9 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Noise_Force: 0.01
+    - _Noise_Force: 0.03
     - _Noise_Scale: 0.0001
-    - _Speed: 0.2
+    - _Speed: 0.1
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &7166289788408918379
