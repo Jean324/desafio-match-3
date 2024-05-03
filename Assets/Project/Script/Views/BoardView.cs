@@ -144,11 +144,6 @@ namespace Gazeus.DesafioMatch3.Views
         private void SimpleMatchEffect(List<Vector2Int> matchedPosition)
         {
 
-            //if (matchedPosition.Count > 3)
-            //{
-            //Debug.Log("Contagem: " + matchedPosition.Count);
-
-            //}
             for (int i = 0; i < matchedPosition.Count; i++)
             {
                 Vector2Int position = matchedPosition[i];
