@@ -5,6 +5,7 @@ using Gazeus.DesafioMatch3.Models;
 using Gazeus.DesafioMatch3.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace Gazeus.DesafioMatch3.Views
 {
@@ -18,6 +19,8 @@ namespace Gazeus.DesafioMatch3.Views
 
         private GameObject[][] _tiles;
         private TileSpotView[][] _tileSpots;
+
+        //[SerializeField] private ParticleSystem _explosion;
 
         public void CreateBoard(List<List<Tile>> board)
         {
@@ -35,7 +38,7 @@ namespace Gazeus.DesafioMatch3.Views
                     TileSpotView tileSpot = Instantiate(_tileSpotPrefab);
                     tileSpot.transform.SetParent(_boardContainer.transform, false);
                     tileSpot.SetPosition(x, y);
-                    tileSpot.Clicked += TileSpot_Clicked;
+                    tileSpot.Clicked += TileSpot_Clicked;                    
 
                     _tileSpots[y][x] = tileSpot;
 
@@ -80,8 +83,12 @@ namespace Gazeus.DesafioMatch3.Views
             for (int i = 0; i < matchedPosition.Count; i++)
             {
                 Vector2Int position = matchedPosition[i];
+
+                SimpleMatchEffect(matchedPosition);                 
+
                 Destroy(_tiles[position.y][position.x]);
-                _tiles[position.y][position.x] = null;
+                _tiles[position.y][position.x] = null;            
+                
             }
 
             return DOVirtual.DelayedCall(0.2f, () => { });
@@ -131,8 +138,23 @@ namespace Gazeus.DesafioMatch3.Views
         #region Events
         private void TileSpot_Clicked(int x, int y)
         {
-            TileClicked(x, y);
+            TileClicked(x, y);           
         }
+
+        private void SimpleMatchEffect(List<Vector2Int> matchedPosition)
+        {
+
+            for (int i = 0; i < matchedPosition.Count; i++)
+            {
+                Vector2Int position = matchedPosition[i];
+
+                ParticleSystem particle = _tileSpots[position.y][position.x].GetComponentInChildren<ParticleSystem>();
+                particle.Play();
+
+            }
+
+        }       
+
         #endregion
     }
 }
