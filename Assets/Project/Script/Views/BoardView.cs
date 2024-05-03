@@ -84,12 +84,11 @@ namespace Gazeus.DesafioMatch3.Views
             {
                 Vector2Int position = matchedPosition[i];
 
-                SimpleMatchEffect(matchedPosition);                
+                SimpleMatchEffect(matchedPosition);                 
 
                 Destroy(_tiles[position.y][position.x]);
-                _tiles[position.y][position.x] = null;              
+                _tiles[position.y][position.x] = null;            
                 
-
             }
 
             return DOVirtual.DelayedCall(0.2f, () => { });
@@ -159,7 +158,7 @@ namespace Gazeus.DesafioMatch3.Views
 
             }
 
-        }
+        }       
 
         #endregion
     }

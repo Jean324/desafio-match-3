@@ -14,13 +14,6 @@ namespace Gazeus.DesafioMatch3
         [SerializeField] private Animator animator;
         [SerializeField] public Button buttonPlay;
 
-        // Start is called before the first frame update
-        void Start()
-        {            
-            
-        }
-
-        // Update is called once per frame
         void Update()
         {
             SliderValeu();
@@ -28,8 +21,7 @@ namespace Gazeus.DesafioMatch3
 
         private void SliderValeu()
         {
-            material.color = color;
-            
+            material.color = color;            
         }
 
         public void PlayIntroAnimation()
